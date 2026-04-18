@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My App</title>
+</head>
+<body>
+
+<h1>Frontend + Python Backend</h1>
+<button onclick="callAPI()">Call API</button>
+
+<p id="result"></p>
+
+<script>
+function callAPI() {
+    fetch("http://127.0.0.1:8000/api/hello")
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById("result").innerText = data.message;
+        });
+}
+</script>
+
+</body>
+</html>
