@@ -322,16 +322,12 @@
       setLoading(false);
     }
   }
-
-  const API_URL = window.location.hostname === "localhost"
-  ? "http://127.0.0.1:8000"
-  : "https://aichatbot-gzfeg5ezfwapffhy.canadacentral-01.azurewebsites.net";
-
+alert("testing->"+window.location.hostname);
+ 
   // ── OpenAI Responses API call testing──────────────────────────────
   async function callOpenAI(userMessage) {
 
-
-  const res = await fetch(`${API_URL}/chat`, {
+  const res = await fetch("http://127.0.0.1:8000/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
