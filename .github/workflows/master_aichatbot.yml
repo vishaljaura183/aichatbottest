@@ -57,4 +57,4 @@ jobs:
           app-name: 'aichatbot'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_75ACE330138242ABA0B71F4C2743C204 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DD44D77550204BB7A791F9490FCF17D2 }}
